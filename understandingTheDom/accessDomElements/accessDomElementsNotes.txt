@@ -1,0 +1,52 @@
+HOW TO ACCESS ELEMENTS IN THE DOM
+
+INTRODUCTION ------------------------------------------>
+    > The DOM is structured as a tree nodes. Nodes can be text, comments, or 
+    elements. Usually when we want to access content in the DOM, it'll be 
+    through an HTML element.
+
+    > We can access elements in the DOM by ID, class, tag, and query selectors.
+        * getElementById() --> ID
+        * getElementsByClassName() --> Class 
+        * getElementsByTagName() --> Tag 
+        * querySelector() --> Selector (single element)
+        * querySelectorAll() --> Selector (all elements)
+
+ACCESSING ELEMENTS BY ID ------------------------------>
+    > We can access a single element in the DOM by its unique ID. We select that
+    element with getElementById().
+
+    > Accessing in this way is the most efficient at selecting a single 
+    element. An ID must always be unique to the page, so that means that 
+    by using this method, you can only select one element at a time.
+
+ACCESSING ELEMENTS BY CLASS --------------------------->
+    > We can access all of the elements of a given class name by using
+    getElementsByClassName(). The class attribute is used to access a 
+    group of more specific elements.
+
+    > When we use this method and select multiple elements, we are 
+    returned an array-like object of elements. JavaScript arrays must
+    be accessed with an index number. So if we want to update a single 
+    element of the tag, we'd be able to update the element by using 
+    bracket notation. Or, to access all the elements, we can use a for 
+    loop to go through every element in the array.
+
+ACCESSING ELEMENTS BY TAG ------------------------------>
+    > We can access multiple elements in a less specific way by using
+    getElementsByTagName(). This method will also return an array-like
+    object of elements. We can modify every element by using a for loop.
+
+QUERY SELECTORS ----------------------------------------->
+    > We can use querySelector() to access a single element. The selector 
+    for an id attribute is '#' The selector for a class is '.'.
+    > If we have a selector with multiple elements, such as a class or 
+    a tag, this will return the first element that matches the query.
+    > Comma-separated values function as an OR operator
+
+    > If we have a selector with multiple elements, such as a class or 
+    a tag, this will return all of the elements that match a specific
+    query.
+    > We can use the forEach() method to apply our changes to all of the elements.
+    > comma-separated values function as an AND operator.
+
