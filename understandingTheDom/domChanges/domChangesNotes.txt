@@ -1,0 +1,45 @@
+Making Changes to the DOM
+
+I. Introduction
+    > We can make changes to the DOM by adding, changing, replacing,
+    and removing nodes. 
+
+II. Creating New Nodes 
+    > On a static website, we add elements to the page with HTML.
+    > On a dynamic web app, elements are added with JavaScript 
+    > We can use the createElement() and createTextNode() methods to 
+    create new nodes in the DOM
+
+    > createElement() - creates a new element node
+    > createTextNode() - creates a new text node
+    > node.textContent - gets or sets the text content of an element node
+    > node.innerHTML - gets or sets the HTML content of an element 
+
+    > The use of createElement() and textContent creates a complete
+    element node. 
+    > Another way of inserting content for an element is by using the 
+    innerHTML property, but it's recommended to use textContent due to 
+    potential cross-site scripting risks
+
+    > We can also use createTextNode()
+
+    > When using these methods, the text is not visible on the front 
+    end of a website until we insert them into the document. 
+
+III. Inserting Nodes into the DOM 
+    > If we want to see the elements we create with methods such as 
+    createElement(), we need to insert them into the document.
+    > We can use the methods: appendChild() and insertBefore() to add
+    items to the beginning, middle, or end of a parent element
+    > We can use the method replaceChild() to replace an old node with a
+    new node.
+
+    > node.appendChild() - adds a node as the last child of a parent element 
+    > node.insertBefore() - inserts a node into the parent element before a 
+    specified sibling node ---> parentNode.insertBefore(newNode, nextSibling);
+    > node.replaceChild() - replaces an existing node with a new node
+        ---> parentNode.replaceChild(newNode, oldNode);
+
+IV. Removing Nodes from the DOM 
+    > Child nodes can be removed from a parent with removeChild()
+    > A node can be removed with remove()
