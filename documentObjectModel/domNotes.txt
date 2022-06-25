@@ -1,0 +1,56 @@
+# The Document Object Model ------------------------------------->
+    > The Document Object Model (DOM) specifies to browsers how it should 
+    model an HTML page and how JavaScript can access and update the 
+    contents of a web page while it is in the browser. 
+
+    > The DOM is called an object model because it is made up of objects.
+    Each object represents a different part of the page loaded into the 
+    browser window. It states what your script can ask the browser 
+    about the current page, and how to update what is shown to 
+    the user. 
+
+# The DOM Tree --------------------------------------------------->
+    > The DOM is made up of 4 main types of nodes:
+    document node, element nodes, attribute nodes, and text nodes
+    
+    < Each node is an object with methods and properties. Scripts access
+    and update the DOM tree and any of those changes to the tree are 
+    reflected in the browser. 
+
+# Working With the DOM Tree --------------------------------------->
+    > Accessing and Updating the DOM tree includes 2 steps:
+    1. Find the node that represents the element you want to work with
+    2. Use text content, child elements, and attributes
+
+    > Select an individual element node:
+        * getElementById() - grab's an element's unique id value
+        * querySelector() - uses a CSS selector, and returns the first
+        matching element
+
+    > Select multiple elements (nodeList):
+        * getElementsByClassName() - selects all elements with a specific
+        class attribute value
+        * getElementsByTagName() - selects all the elements with a specific 
+        tag name 
+        * querySelectorAll() - uses a CSS selector to select all 
+        matching values
+
+    > Traversing between element nodes:
+        * parentNode - selects the parent of the current element node 
+        (returns one element)
+        * previousSibling/nextSibling - selects the previous or next
+        sibling from the DOM tree
+        * firstChild/lastChild - selects the first or last child of
+        the current element 
+
+    > If you're going to use the same element more than once, you can 
+    store the obejct's location in a varible (caching) so that the 
+    browser doesn't have to search the DOM to keep finding the same
+    element again. 
+
+    > If a method can return more than one node, it will return a NodeList, 
+    which is a collection of nodes. Onnce you get the nodeList, you need
+    to select the element you want from the list by using an index 
+    number. 
+
+    > 
