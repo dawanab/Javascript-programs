@@ -1,0 +1,43 @@
+body {
+    font-family: Gotham, Helvetica, Arial, sans-serif;
+    color: #c7b050;
+    margin: 0px auto;
+    padding: 30px;
+    background: #4e6c87;
+    text-align: center;
+}
+  
+h1 {
+    text-transform: uppercase;
+}
+  
+h3 {
+    color: #4e6746;
+}
+
+a {
+    color: #4e6c87;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #854545;
+}
+
+table {
+    padding: 0px;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+td {
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+.blank {
+    background: #f7f7f7;
+}
