@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-    background-image: url(../webpageExample/jojosbizarre.png);
+    background-image: url("../webpageExample/images/jojosbizarre.png");
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
@@ -91,7 +91,7 @@ li {
 .complete {
   background-color: #999;
 	color: #fff;
-	background-image: url("../images/icon-trash.png");
+	background-image: url("../webpageExample/images/icon-trash.png");
 	background-position: center, right;
 	background-repeat: no-repeat;
 	border-top: 1px solid #666;
@@ -101,7 +101,7 @@ li {
 li a {
 	color: #fff;
 	text-decoration: none;
-	background-image: url("../webpageExample/kinglogo.png");
+	background-image: url("../webpageExample/images/jojosbizarre.png");
 	background-position: center, right;
 	background-repeat: no-repeat;
     padding-right: 36px;
@@ -158,7 +158,7 @@ button {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
     h1{
-        background-image: url(../images/2xkinglogo.png);
+        background-image: url(../webpageExample/images/jojosbizarre.png);
         background-size: 72px 72px;
     }
 }
